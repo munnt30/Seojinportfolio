@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Animation & UX/UI Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name, an animator and UX/UI designer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ✏️ 상단 메뉴 -->
+  <header class="nav">
+    <a href="#top" class="logo">Your Name</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ✏️ 첫 화면: 나를 한 문장으로 소개하기 -->
+    <section class="hero">
+      <p class="eyebrow">Animator · UX/UI Designer · Jeju, Korea</p>
+      <h1>I tell stories with <em>motion</em><br>and design things people <em>enjoy using</em>.</h1>
+      <p class="lead">
+        Hi, I'm Your Name — a high school student who loves character animation,
+        visual storytelling, and designing interfaces that feel friendly.
+      </p>
+      <a href="#work" class="btn">See my work ↓</a>
+    </section>
+
+    <!-- ✏️ 작품 목록: 카드를 복사해서 작품을 추가하세요 -->
+    <section id="work" class="section">
+      <div class="section-head">
+        <h2>Selected Work</h2>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="animation">Animation</button>
+          <button class="filter" data-filter="uxui">UX/UI</button>
+          <button class="filter" data-filter="drawing">Drawing</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <a class="card" data-category="animation" href="projects/animation-sample.html">
+          <div class="thumb thumb-1"><span>▶</span></div>
+          <div class="card-body">
+            <p class="tag">Animation · 2D</p>
+            <h3>The Lost Tangerine</h3>
+            <p>A 45-second short about a tangerine rolling across Jeju.</p>
+          </div>
+        </a>
+
+        <a class="card" data-category="uxui" href="projects/uxui-sample.html">
+          <div class="thumb thumb-2"><span>◧</span></div>
+          <div class="card-body">
+            <p class="tag">UX/UI · Mobile App</p>
+            <h3>Olle Walk</h3>
+            <p>An app that helps tourists explore Jeju's Olle trails safely.</p>
+          </div>
+        </a>
+
+        <a class="card" data-category="drawing" href="projects/drawing.html">
+          <div class="thumb thumb-3"><span>✎</span></div>
+          <div class="card-body">
+            <p class="tag">Observational Drawing</p>
+            <h3>Sketchbook 2026</h3>
+            <p>Figure studies, café sketches, and life drawing.</p>
+          </div>
+        </a>
+
+        <a class="card" data-category="animation" href="#">
+          <div class="thumb thumb-4"><span>●</span></div>
+          <div class="card-body">
+            <p class="tag">Animation · Character Design</p>
+            <h3>Haenyeo Grandma</h3>
+            <p>Character sheet and walk cycle inspired by Jeju's women divers.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ✏️ 자기소개 -->
+    <section id="about" class="section about">
+      <div class="about-photo" aria-hidden="true">Your photo</div>
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I grew up on Jeju Island, surrounded by volcanic landscapes and ocean stories.
+          I started animating flipbooks at 12, and now I work in Procreate, Toon Boom, and Figma.
+        </p>
+        <p>
+          I'm interested in how animation and interaction design both ask the same question:
+          <strong>how does this make someone feel?</strong>
+        </p>
+        <ul class="skills">
+          <li>Procreate</li><li>Toon Boom Harmony</li><li>After Effects</li>
+          <li>Figma</li><li>Blender</li><li>Life Drawing</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ✏️ 연락처 -->
+    <section id="contact" class="section contact">
+      <h2>Let's connect</h2>
+      <p>I'm applying to BFA programs in Animation and Interaction Design for Fall 2028.</p>
+      <p class="contact-links">
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="#">Instagram</a>
+        <a href="#">Vimeo</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Your Name. Built with HTML, CSS & a little help from Claude Code.</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

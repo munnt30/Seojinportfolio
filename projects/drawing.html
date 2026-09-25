@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketchbook 2026 — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="../index.html" class="logo">Your Name</a>
+    <nav>
+      <a href="../index.html#work">Work</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main class="gallery-page">
+    <a href="../index.html#work" class="back">← Back to work</a>
+    <h1>Sketchbook 2026</h1>
+    <p class="lead">Observational drawings from life — figure studies, portraits, and places around Jeju.</p>
+
+    <!--
+      ✏️ 그림 추가하는 법
+      1. 그림 파일을 images 폴더에 넣기 (예: images/drawing-01.jpg)
+      2. 아래 <figure> 하나를 복사해서 붙여넣기
+      3. <div class="placeholder ..."> 줄을 지우고 이 줄로 바꾸기:
+         <img src="../images/drawing-01.jpg" alt="그림 설명 (영어로)">
+      4. 제목(title)과 재료·연도(medium) 바꾸기
+    -->
+    <div class="gallery">
+
+      <figure class="gallery-item">
+        <button class="gallery-open" aria-label="View larger: Morning at Dongmun Market">
+          <div class="placeholder tall" style="--c1:#d9cfc0; --c2:#9c8f7e">Figure study</div>
+        </button>
+        <figcaption>
+          <span class="title">Morning at Dongmun Market</span>
+          <span class="medium">Graphite on paper · 2026</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <button class="gallery-open" aria-label="View larger: Grandmother, Reading">
+          <div class="placeholder square" style="--c1:#e6d3c3; --c2:#b0826a">Portrait</div>
+        </button>
+        <figcaption>
+          <span class="title">Grandmother, Reading</span>
+          <span class="medium">Charcoal · 2026</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <button class="gallery-open" aria-label="View larger: Seongsan from the Ferry">
+          <div class="placeholder wide" style="--c1:#c8d6d9; --c2:#6f8f96">Landscape</div>
+        </button>
+        <figcaption>
+          <span class="title">Seongsan from the Ferry</span>
+          <span class="medium">Ink &amp; watercolor · 2026</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <button class="gallery-open" aria-label="View larger: Hands, 30 Studies">
+          <div class="placeholder tall" style="--c1:#ddd6cc; --c2:#8a8176">Hand studies</div>
+        </button>
+        <figcaption>
+          <span class="title">Hands, 30 Studies</span>
+          <span class="medium">Pencil · 2025</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <button class="gallery-open" aria-label="View larger: Café Regulars">
+          <div class="placeholder square" style="--c1:#e9dcc8; --c2:#a88c63">Gesture</div>
+        </button>
+        <figcaption>
+          <span class="title">Café Regulars</span>
+          <span class="medium">Ballpoint pen · 2026</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <button class="gallery-open" aria-label="View larger: Still Life with Tangerines">
+          <div class="placeholder wide" style="--c1:#f2d2b0; --c2:#d9803f">Still life</div>
+        </button>
+        <figcaption>
+          <span class="title">Still Life with Tangerines</span>
+          <span class="medium">Gouache · 2026</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <button class="gallery-open" aria-label="View larger: Self-Portrait in Mirror">
+          <div class="placeholder tall" style="--c1:#d6ccd9; --c2:#8a7996">Self-portrait</div>
+        </button>
+        <figcaption>
+          <span class="title">Self-Portrait in Mirror</span>
+          <span class="medium">Graphite · 2025</span>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <button class="gallery-open" aria-label="View larger: Stone Walls of Jeju">
+          <div class="placeholder square" style="--c1:#cfcfc9; --c2:#6e6e66">Texture study</div>
+        </button>
+        <figcaption>
+          <span class="title">Stone Walls of Jeju</span>
+          <span class="medium">Charcoal · 2026</span>
+        </figcaption>
+      </figure>
+
+    </div>
+  </main>
+
+  <!-- 크게 보기 창 (자바스크립트가 내용을 채워요) -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Drawing viewer" hidden>
+    <button class="lb-close" aria-label="Close">✕</button>
+    <button class="lb-prev" aria-label="Previous drawing">‹</button>
+    <figure class="lb-content">
+      <div class="lb-media"></div>
+      <figcaption class="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-next" aria-label="Next drawing">›</button>
+  </div>
+
+  <footer class="footer">© 2026 Your Name</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
